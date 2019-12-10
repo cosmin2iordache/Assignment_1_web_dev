@@ -1,10 +1,10 @@
 /* for any variables... I don't know yet if i'm aloud to use them :) */
 
 :root {
-  --var1: rgb(247, 238, 238);
-  --var2: rgb(247, 238, 238);
-  --var3: rgb(226, 238, 199);
-  --var4: rgb(247, 238, 238);
+  --var1: rgb(71, 70, 70);
+  --var2: rgb(243, 243, 13);
+  --var3: rgb(255, 255, 199);
+  --var4: rgb(255, 255, 238);
   --var5: center;
 }
 
@@ -40,9 +40,10 @@ body {
 }
 
 /*-----------------Navigation--------------------------------*/
-.navigator ul {
-list-style: none;
-}
+/* .navigator ul {
+      list-style: none;
+      vertical-align: middle;
+} */
 
 .navigator ul li {
       display: inline-block;
@@ -53,7 +54,7 @@ list-style: none;
 .navigator a {
       text-decoration: none;
       text-transform: uppercase;
-      color: rgb(37, 30, 100);
+      color: rgb(185, 172, 235);
 }
 
 .navigator a:hover {
@@ -79,7 +80,7 @@ list-style: none;
 }
 
 .article{
-      border-radius: 5px;
+      /* border-radius: 5px; */
       background-color: var(--var4);
       box-shadow: 0 .3rem .2rem rgba(74, 99, 42, 0.5);
       line-height: 2.2rem;
@@ -88,7 +89,7 @@ list-style: none;
 .article:hover{
       box-shadow: 0 5px 15px rgb(103, 81, 231);
       background-color: rgb(201, 202, 200);
-      transition-duration: 2s; /*niceeeeee*/
+      transition-duration: 2s;                         /*niceeeeee*/
 }
 .main_main p {
       padding: 1.2rem;
