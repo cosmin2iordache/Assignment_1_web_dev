@@ -242,6 +242,9 @@ main.gallery{
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr;
       }
+      .main_aside {
+            background-color: var(--var2);
+      }
 }
 
 @media (max-width: 810px) {
