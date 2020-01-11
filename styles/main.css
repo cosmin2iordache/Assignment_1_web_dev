@@ -25,6 +25,17 @@ body {
       background-color: var(--var1);
 }
 
+/* Making sure that the icons don't change the color after visited and remain blue*/
+a, a:visited, a:active, a::before {
+      color: blue;
+      text-decoration: none;
+}
+
+a:hover{
+      text-transform: uppercase;  
+      color:rgb(238, 25, 25);
+}
+
 /*----------------------Header--------------------------------*/
 
 .main_header {
@@ -59,7 +70,7 @@ ul {
 .navigator a {
       text-decoration: none;
       text-transform: uppercase;
-      color: rgb(185, 172, 235);
+      color: blue;
 }
 
 .navigator a:hover {
@@ -192,16 +203,6 @@ ul {
       font-size: 2.5rem;
       padding: .5rem;
 }
-/* Making sure that the icons don't change the color after visited and remain blue*/
-a, a:visited, a:active, a::before {
-      color: blue;
-      text-decoration: none;
-}
-
-a:hover{
-      text-transform: uppercase;  
-      color:rgb(238, 25, 25);
-}
 
 
 /* P O R T O F O L I O */
@@ -211,7 +212,7 @@ a:hover{
 main.gallery{
       margin: 2rem 1rem;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
       grid-gap: 1rem;
 }
 
