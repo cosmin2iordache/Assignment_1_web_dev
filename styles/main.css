@@ -1,5 +1,3 @@
-/* for any variables... I don't know yet if i'm aloud to use them :) */
-
 :root {
   --var1: rgb(240, 240, 240);
   --var2: rgb(240, 240, 240);
@@ -178,7 +176,7 @@ ul {
 .main_aside h2, .main_aside img {padding: 1.5rem;}
 
 .main_aside ul{
-      text-align: centre;
+      text-align: center;     
       list-style: none;
       margin: 0;
       padding: 0;
