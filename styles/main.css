@@ -61,6 +61,7 @@ ul {
 .navigator a:hover {
       color: rgb(233, 45, 45);
       text-decoration: underline overline;
+      font-style: oblique;
 }
 
 /*------------Main Footer Section-------------------*/
