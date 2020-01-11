@@ -88,11 +88,9 @@ ul {
       border-radius: var(--radius);
       grid-gap: .5rem;
       line-height: 1.5rem;
-      
-
 }
  .main_footer section {
-      background-color: rgb(145, 186, 245);
+      background-color: rgb(169, 201, 245);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
  }
@@ -125,7 +123,7 @@ ul {
 .article{
       background-color: var(--var4);
       box-shadow: var(--shadow);
-      line-height: 2.2rem;
+      line-height: 2.9rem;
       border-radius: var(--radius);
 }
 
@@ -214,6 +212,7 @@ main.gallery{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
       grid-gap: 1rem;
+      font-size: 1.4rem;
 }
 
 .project{
@@ -246,23 +245,22 @@ main.gallery{
 
 
 /* 
-CV - Andrew HarvardPRO @aharvard - Codepen.io
-      https://codepen.io/aharvard/pen/KrmKpk        
+The layout and ideea taken from - Andrew HarvardPRO @aharvard - Codepen.io - https://codepen.io/aharvard/pen/KrmKpk        
+The CV page was modified and adapted to my requirements
 */
 
 
 .cv {
   margin: 0 auto;
   max-width: 1200px;
-  min-height: 100vh;
-  padding: 20px;
-  border: red solid 2px;
+  /* min-height: 100vh; */
+  padding: 10px;
 }
 
 .cv h2 {
   font-size: 2rem;
-  line-height: 2.4rem;
-  margin: 0 0 1.4rem 0;
+  line-height: 1.5rem;
+  margin: 0 0 1.1rem 0;
   padding-bottom: 1rem;
 }
 
@@ -272,8 +270,9 @@ CV - Andrew HarvardPRO @aharvard - Codepen.io
 
 
 .cv_section {
-  border: 1px solid blue;
-  margin: 5rem 0;
+  /* border: 1px solid blue; */
+  margin: 2rem 0;
+  padding: .5rem;
   box-shadow: var(--shadow);
   border-radius: var(--radius);
 }
@@ -285,7 +284,7 @@ CV - Andrew HarvardPRO @aharvard - Codepen.io
 
 .cv_section_col { 
   flex: 1;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .col_1 { 
@@ -312,8 +311,7 @@ CV - Andrew HarvardPRO @aharvard - Codepen.io
 iframe{
       width: 950px;
       min-height: 850px;
-      border: solid red;
-}
+      }
 
 /*---------------Responsivnes----------------*/
 @media (max-width: 1050px) {
