@@ -1,10 +1,10 @@
 /* for any variables... I don't know yet if i'm aloud to use them :) */
 
 :root {
-  --var1: rgb(231, 231, 231);
-  --var2: rgb(231, 231, 231);
-  --var3: rgb(231, 231, 231);
-  --var4: rgb(231, 231, 231);
+  --var1: rgb(240, 240, 240);
+  --var2: rgb(240, 240, 240);
+  --var3: rgb(240, 240, 240);
+  --var4: rgb(240, 240, 240);
   --var5: center;
 }
 
@@ -73,12 +73,13 @@ ul {
       border-radius: 5px;
       grid-gap: .5rem;
       line-height: 1.5rem;
+      
 
 }
  .main_footer section {
       background-color: rgb(145, 186, 240);
       border-radius: .5rem;
-      box-shadow: 0 .3rem .2rem rgba(74, 99, 42, 0.5);
+      box-shadow: 0 1rem 1rem rgba(74, 99, 42, 0.5);
  }
 
  .main_footer li {
@@ -109,12 +110,12 @@ ul {
 
 .article{
       background-color: var(--var4);
-      box-shadow: 0 .3rem .2rem rgba(74, 99, 42, 0.5);
+      box-shadow: 0 1rem 1rem rgba(74, 99, 42, 0.5);
       line-height: 2.2rem;
 }
 
 .article:hover{
-      box-shadow: 0 5px 15px rgb(103, 81, 231);
+      box-shadow: 0 5px 15px rgb(103, 81, 240);
       background-color: rgb(201, 202, 200);
       transition-duration: 2s;              /*___*/
 }
@@ -134,6 +135,8 @@ ul {
       text-align: var(--var5);
       border-radius: 5px;
       padding: 1rem;
+      box-shadow: 0 1rem 1rem rgba(74, 99, 42, 0.5);
+
 }
 
 .main_aside img {
@@ -204,14 +207,14 @@ a:hover{
 main.gallery{
       margin: 2rem 1rem;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       grid-gap: 1rem;
 }
 
 .project{
       max-width: 100%;
       border-radius: 5px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 1rem 1rem rgba(74, 99, 42, 0.5);
 }
 .project:hover {
       box-shadow: 0 10px 30px rgba(195, 27, 27, 0.6);
@@ -241,20 +244,15 @@ CV - Andrew HarvardPRO @aharvard - Codepen.io
 */
 
 
-.site-wrapper {
+.cv {
   margin: 0 auto;
   max-width: 1024px;
   min-height: 100vh;
   padding: 20px;
+  border: red solid 2px;
 }
 
-h1 {
-  font-size: 3rem;
-  line-height: 3.6rem;
-  margin: 0 0 1.2rem 0;
-}
-
-h2.cv {
+.cv h2 {
   font-size: 2rem;
   line-height: 2.4rem;
   margin: 0 0 1.4rem 0;
@@ -266,33 +264,41 @@ h2.cv {
 }
 
 
-.cv-section {
-  /* border: 1px solid blue; */
+.cv_section {
+  border: 1px solid blue;
   margin: 5rem 0;
 }
 
-.section-row { 
+.cv_section_row { 
   display: flex;
   margin-bottom: 2.4rem;
 }
 
-.section-col { 
+.cv_section_col { 
   flex: 1;
   margin-right: 10px;
   /* border: 1px solid red; */
   }
 
-.col-1 { 
+.col_1 { 
   flex: 0;
   flex-basis: 5rem; 
 }
 
-.col-2 {
+.col_2 {
   flex: 8;
 }
 
-.col-3 {
+.col_3 {
   flex: 3;
+}
+
+
+.form {
+      display: flex;
+      justify-content: center;
+
+
 }
 
 
