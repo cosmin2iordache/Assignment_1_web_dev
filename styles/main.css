@@ -296,8 +296,6 @@ CV - Andrew HarvardPRO @aharvard - Codepen.io
 .form {
       display: flex;
       justify-content: center;
-
-
 }
 
 
@@ -366,3 +364,8 @@ CV - Andrew HarvardPRO @aharvard - Codepen.io
 
 
 
+iframe{
+      width: 950px;
+      min-height: 850px;
+      border: solid red
+}
