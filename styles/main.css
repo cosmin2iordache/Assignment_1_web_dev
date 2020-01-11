@@ -1,11 +1,12 @@
 :root {
-  --var1: rgb(240, 240, 240);
-  --var2: rgb(240, 240, 240);
-  --var3: rgb(240, 240, 240);
-  --var4: rgb(240, 240, 240);
+  --var1: rgb(245, 245, 245);
+  --var2: rgb(245, 245, 245);
+  --var3: rgb(245, 245, 245);
+  --var4: rgb(245, 245, 245);
   --var5: center;
   --shadow: 0 1rem 1rem rgba(74, 99, 42, 0.5);
   --shadow_hover: 0 10px 30px rgba(41, 60, 233, 0.6);
+  --radius: 5px;
 
 
 }
@@ -73,15 +74,15 @@ ul {
       grid-template-columns: 1fr 1fr 1fr;
       background-color: var(--var4);
       margin: 2rem 1rem;
-      border-radius: 5px;
+      border-radius: var(--radius);
       grid-gap: .5rem;
       line-height: 1.5rem;
       
 
 }
  .main_footer section {
-      background-color: rgb(145, 186, 240);
-      border-radius: .5rem;
+      background-color: rgb(145, 186, 245);
+      border-radius: var(--radius);
       box-shadow: var(--shadow);
  }
 
@@ -108,13 +109,13 @@ ul {
       grid-template-columns: 1fr 1fr 1fr;
       background-color: var(--var2);
       grid-gap: .5rem;
-      border-radius: 5px;
 }
 
 .article{
       background-color: var(--var4);
       box-shadow: var(--shadow);
       line-height: 2.2rem;
+      border-radius: var(--radius);
 }
 
 .article:hover{
@@ -136,7 +137,7 @@ ul {
 .main_aside {
       background-color: var(--var3);
       text-align: var(--var5);
-      border-radius: 5px;
+      border-radius: var(--radius);
       padding: 1rem;
       box-shadow: var(--shadow);
 
@@ -192,7 +193,7 @@ ul {
       padding: .5rem;
 }
 /* Making sure that the icons don't change the color after visited and remain blue*/
-a, a:visited, a:active {
+a, a:visited, a:active, a::before {
       color: blue;
       text-decoration: none;
 }
@@ -216,7 +217,7 @@ main.gallery{
 
 .project{
       max-width: 100%;
-      border-radius: 5px;
+      border-radius: var(--radius);
       box-shadow: var(--shadow);
 }
 .project:hover {
@@ -239,7 +240,7 @@ main.gallery{
       display: block;
       width: 100%;
       height: auto;
-      border-radius: 5px;
+      border-radius: var(--radius);
 }
 
 
@@ -251,7 +252,7 @@ CV - Andrew HarvardPRO @aharvard - Codepen.io
 
 .cv {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1200px;
   min-height: 100vh;
   padding: 20px;
   border: red solid 2px;
@@ -272,6 +273,8 @@ CV - Andrew HarvardPRO @aharvard - Codepen.io
 .cv_section {
   border: 1px solid blue;
   margin: 5rem 0;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
 }
 
 .cv_section_row { 
@@ -282,8 +285,7 @@ CV - Andrew HarvardPRO @aharvard - Codepen.io
 .cv_section_col { 
   flex: 1;
   margin-right: 10px;
-  /* border: 1px solid red; */
-  }
+}
 
 .col_1 { 
   flex: 0;
@@ -304,6 +306,13 @@ CV - Andrew HarvardPRO @aharvard - Codepen.io
       justify-content: center;
 }
 
+/* CONTACT PAGE*/
+
+iframe{
+      width: 950px;
+      min-height: 850px;
+      border: solid red;
+}
 
 /*---------------Responsivnes----------------*/
 @media (max-width: 1050px) {
@@ -371,13 +380,9 @@ CV - Andrew HarvardPRO @aharvard - Codepen.io
       .main_header img {
             width: 3rem;
       }
-
+      
+      * {
+            --radius: 0;
+      }
+}
 /*---------The End-------------------*/
-}
-
-
-iframe{
-      width: 950px;
-      min-height: 850px;
-      border: solid red;
-}
