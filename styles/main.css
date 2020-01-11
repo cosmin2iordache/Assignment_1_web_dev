@@ -4,6 +4,10 @@
   --var3: rgb(240, 240, 240);
   --var4: rgb(240, 240, 240);
   --var5: center;
+  --shadow: 0 1rem 1rem rgba(74, 99, 42, 0.5);
+  --shadow_hover: 0 10px 30px rgba(41, 60, 233, 0.6);
+
+
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box;}
@@ -78,7 +82,7 @@ ul {
  .main_footer section {
       background-color: rgb(145, 186, 240);
       border-radius: .5rem;
-      box-shadow: 0 1rem 1rem rgba(74, 99, 42, 0.5);
+      box-shadow: var(--shadow);
  }
 
  .main_footer li {
@@ -109,14 +113,14 @@ ul {
 
 .article{
       background-color: var(--var4);
-      box-shadow: 0 1rem 1rem rgba(74, 99, 42, 0.5);
+      box-shadow: var(--shadow);
       line-height: 2.2rem;
 }
 
 .article:hover{
-      box-shadow: 0 5px 15px rgb(103, 81, 240);
-      background-color: rgb(201, 202, 200);
-      transition-duration: 2s;              /*___*/
+      box-shadow: var(--shadow_hover);
+      background-color: rgb(222, 222, 222);
+      transition-duration: 1s;              /*___*/
 }
 
 .main_main p {
@@ -134,7 +138,7 @@ ul {
       text-align: var(--var5);
       border-radius: 5px;
       padding: 1rem;
-      box-shadow: 0 1rem 1rem rgba(74, 99, 42, 0.5);
+      box-shadow: var(--shadow);
 
 }
 
@@ -213,10 +217,12 @@ main.gallery{
 .project{
       max-width: 100%;
       border-radius: 5px;
-      box-shadow: 0 1rem 1rem rgba(74, 99, 42, 0.5);
+      box-shadow: var(--shadow);
 }
 .project:hover {
-      box-shadow: 0 10px 30px rgba(195, 27, 27, 0.6);
+      box-shadow: var(--shadow_hover);
+      transition-duration: 1s;              /*___*/
+
 }
          
 .project:hover img {
@@ -355,9 +361,15 @@ CV - Andrew HarvardPRO @aharvard - Codepen.io
             grid-template-rows: 1fr 1fr 1fr;
       }
       .main_header h1 {
-            font-size: 2rem;
+            font-size: 1.5rem;
+      }
+
+      .navigator li {
+            font-size: .8rem;
       }
       
+      .main_header img {
+            width: 3rem;
 }
 
 /*---------The End-------------------*/
