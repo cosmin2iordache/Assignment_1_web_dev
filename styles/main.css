@@ -370,14 +370,14 @@ CV - Andrew HarvardPRO @aharvard - Codepen.io
       
       .main_header img {
             width: 3rem;
-}
+      }
 
 /*---------The End-------------------*/
-
+}
 
 
 iframe{
       width: 950px;
       min-height: 850px;
-      border: solid red
+      border: solid red;
 }
