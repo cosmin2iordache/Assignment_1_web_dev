@@ -33,15 +33,10 @@ body {
 .main_header h1 {
       font-size: 2.3rem;
       margin: 0.5em;
-      text-align: left;
 }
 
 .main_header img {
       width: 5rem;
-}
-
-.navigator {
-      justify-content: center;      
 }
 
 /*-----------------Navigation--------------------------------*/
@@ -64,12 +59,35 @@ ul {
 }
 
 .navigator a:hover {
-      /* background: #ccc ; */
       color: rgb(233, 45, 45);
-      font-style: italic;
+      text-decoration: underline overline;
 }
 
-/* -----------------Middle section--------------------------*/
+/*------------Main Footer Section-------------------*/
+.main_footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      background-color: var(--var4);
+      margin: 2rem 1rem;
+      border-radius: 5px;
+      grid-gap: .5rem;
+      line-height: 1.5rem;
+
+}
+ .main_footer section {
+      background-color: rgb(145, 186, 240);
+      border-radius: .5rem;
+      box-shadow: 0 .3rem .2rem rgba(74, 99, 42, 0.5);
+ }
+
+ .main_footer li {
+      list-style-type: none;
+      margin-left: .5rem;
+ }
+
+/* I N D E X */
+
+/* -----------------INDEX - Middle section--------------------------*/
 
 .middle {
       display: grid;
@@ -78,7 +96,7 @@ ul {
       grid-gap: .5rem;
 }
 
-/*------------------Main Main Section ----------------------*/
+/*------------------INDEX Main Main Section ----------------------*/
 
 .main_main {
       display: grid;
@@ -89,7 +107,6 @@ ul {
 }
 
 .article{
-      /* border-radius: 5px; */
       background-color: var(--var4);
       box-shadow: 0 .3rem .2rem rgba(74, 99, 42, 0.5);
       line-height: 2.2rem;
@@ -98,7 +115,7 @@ ul {
 .article:hover{
       box-shadow: 0 5px 15px rgb(103, 81, 231);
       background-color: rgb(201, 202, 200);
-      transition-duration: 2s;                         /*niceeeeee*/
+      transition-duration: 2s;              /*___*/
 }
 
 .main_main p {
@@ -178,29 +195,15 @@ a:hover{
       color:rgb(238, 25, 25);
 }
 
-/*------------Main Footer Section-------------------*/
-.main_footer {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      background-color: var(--var4);
-      margin: 2rem 1rem;
-      border-radius: 5px;
-      grid-gap: .5rem;
-      line-height: 1.5rem;
 
-}
- .main_footer section {
-      background-color: rgb(145, 186, 240);
-      border-radius: .5rem;
-      box-shadow: 0 .3rem .2rem rgba(74, 99, 42, 0.5);
- }
+/* P O R T O F O L I O */
 
 /*----------Gallery ------------------*/
 
 main.gallery{
       margin: 2rem 1rem;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       grid-gap: 1rem;
 }
 
@@ -250,7 +253,7 @@ h1 {
   margin: 0 0 1.2rem 0;
 }
 
-h2 {
+h2.cv {
   font-size: 2rem;
   line-height: 2.4rem;
   margin: 0 0 1.4rem 0;
@@ -262,9 +265,7 @@ h2 {
 }
 
 
-/* // CV Styles // */
-
-.section-cv {
+.cv-section {
   /* border: 1px solid blue; */
   margin: 5rem 0;
 }
