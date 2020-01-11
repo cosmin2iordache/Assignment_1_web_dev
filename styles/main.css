@@ -95,7 +95,7 @@ ul {
       box-shadow: var(--shadow);
  }
 
- .main_footer li {
+ .main_footer li, .main_footer h3 {
       list-style-type: none;
       margin-left: .5rem;
  }
