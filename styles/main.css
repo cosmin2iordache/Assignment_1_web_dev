@@ -317,7 +317,7 @@ iframe{
       }
 
 /*---------------Responsivnes----------------*/
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
       .img_up{
             grid-column: 1/2;
             grid-row: 1/2;
@@ -340,14 +340,14 @@ iframe{
       }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1024px) {
       .main_main{
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-rows: auto 1fr;
       }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 850px) {
       .img_up{
             grid-column: 1/2;
             grid-row: 1/2;
